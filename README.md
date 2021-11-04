@@ -24,4 +24,4 @@ console.log([1, 2, 3][to](g)).toEqual('1-2-3'); // '1-2-3'
 
 - `pnpm build` build and package
 - `pnpm t` run tests
-- `pnpm pub` publish ./packages/pipe-operator-latest.tgz
+- `pnpm pub` publish ./dist
