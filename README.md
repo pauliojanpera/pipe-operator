@@ -9,7 +9,7 @@ pnpm i @pauliojanpera/pipe-operator
 ```
 
 ```ts
-import { pipeOperator as to } from '../src';
+import { pipeOperator as to } from '@pauliojanpera/pipe-operator';
 
 // f(f(2)) == 8
 const f = (v: Number): number => v.valueOf() * 2;
@@ -17,7 +17,7 @@ console.log((2)[to](f)[to](f)); // '8'
 
 // g([1,2,3])
 const g = (source: number[]): string => source.join('-');
-console.log([1, 2, 3][to](f)).toEqual('1-2-3'); // '1-2-3'
+console.log([1, 2, 3][to](g)).toEqual('1-2-3'); // '1-2-3'
 ```
 
 ## Building/Testing
