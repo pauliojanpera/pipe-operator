@@ -25,3 +25,4 @@ console.log([1, 2, 3][to](g)).toEqual('1-2-3'); // '1-2-3'
 - `pnpm build` build and package
 - `pnpm t` run tests
 - `pnpm pub` publish ./dist
+- `git tag -a v0.0.2 -m 'version 0.0.2' && git push origin v0.0.2` tag a new version
