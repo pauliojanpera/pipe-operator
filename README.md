@@ -15,9 +15,9 @@ import { pipeOperator as to } from '@pauliojanpera/pipe-operator';
 const f = (v: Number): number => v.valueOf() * 2;
 console.log((2)[to](f)[to](f)); // '8'
 
-// g([1,2,3])
-const g = (source: number[]): string => source.join('-');
-console.log([1, 2, 3][to](g)).toEqual('1-2-3'); // '1-2-3'
+// g([1,2,3]) == '1-2-3'
+const g = (numbers: number[]): string => numbers.join('-');
+console.log([1, 2, 3][to](g)); // '1-2-3'
 ```
 
 ## Building/Testing
