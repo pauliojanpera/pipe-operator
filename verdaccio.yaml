@@ -1,0 +1,17 @@
+storage: ~/.verdaccio-store
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+packages:
+  '@pauliojanpera/*':
+    access: $all
+    publish: $all
+    # do not define proxy
+  '**':
+    access: $all
+    proxy: npmjs
+logs:
+  - { type: stdout, format: pretty, level: http }
+#auth:
+#  htpasswd:
+#    file: ./htpasswd

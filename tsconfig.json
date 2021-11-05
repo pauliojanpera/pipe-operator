@@ -2,7 +2,6 @@
 	"extends": "./tsconfig-base.json",
 	"compilerOptions": {
 		"module": "es2015",
-		"types": ["node", "jest"],
-		"outDir": "dist/esm"
-	},
+		"outDir": ".dist/esm"
+	}
 }

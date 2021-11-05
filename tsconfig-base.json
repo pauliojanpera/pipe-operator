@@ -1,11 +1,9 @@
 {
-  "compilerOptions": {
+	"compilerOptions": {
 		"target": "ES2015",
 		"lib": ["ES2015", "ES2018.AsyncGenerator", "ES2018.AsyncIterable"],
- 		"allowJs": true,
+		"allowJs": true,
 		"allowSyntheticDefaultImports": true,
-		"baseUrl": "src",
-		"rootDir": "src",
 		"declaration": true,
 		"listEmittedFiles": false,
 		"listFiles": false,
@@ -14,14 +12,16 @@
 		"pretty": true,
 		"strict": true,
 		"traceResolution": false,
-    "esModuleInterop": true,
+		"esModuleInterop": true,
 		"inlineSourceMap": false,
-    "inlineSources": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+		"inlineSources": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
 		"sourceMap": true,
-    "types": ["jest"],
-  },
-	"include": ["src"],
-	"compileOnSave": true
+		"types": ["node", "jest"],
+		"baseUrl": "src",
+		"rootDir": "src"
+	},
+	"compileOnSave": true,
+	"include": ["src"]
 }
