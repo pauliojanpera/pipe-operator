@@ -1,7 +1,7 @@
 {
 	"name": "@pauliojanpera/pipe-operator",
 	"productName": "Pipe operator",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "A typed pipe operator",
 	"author": {
 		"name": "Pauli Ojanperä",
@@ -10,9 +10,9 @@
 	"copyright": "Pauli Ojanperä",
 	"license": "MIT",
 	"repository": {
-    "type": "git",
-    "url": "https://github.com/pauliojanpera/pipe-operator.git"
-  },
+		"type": "git",
+		"url": "https://github.com/pauliojanpera/pipe-operator.git"
+	},
 	"type": "module",
 	"module": "esm/index.js",
 	"main": "cjs/index.js",
@@ -23,7 +23,8 @@
 		}
 	},
 	"scripts": {
-		"dev": "pnpm verdaccio --listen 8798 --config ./verdaccio.yaml",		"build": "shx rm -rf .dist ; tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./post-build.mjs && pnpm publish ./.dist --registry http://localhost:8798/ --access public --no-git-checks",
+		"dev": "pnpm verdaccio --listen 8798 --config ./verdaccio.yaml",
+		"build": "shx rm -rf .dist ; tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./post-build.mjs && pnpm publish ./.dist --registry http://localhost:8798/ --access public --no-git-checks",
 		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
 		"pub": "pnpm publish ./.dist --access public --publish-branch master",
 		"pubdryrun": "pnpm publish ./.dist --access public --publish-branch master --dry-run --no-git-checks"
