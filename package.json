@@ -1,7 +1,7 @@
 {
 	"name": "@pauliojanpera/pipe-operator",
 	"productName": "Pipe operator",
-	"version": "0.0.22",
+	"version": "0.0.23",
 	"description": "A typed pipe operator",
 	"author": {
 		"name": "Pauli Ojanperä",
