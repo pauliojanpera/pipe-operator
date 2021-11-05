@@ -1,4 +1,4 @@
-storage: .verdaccio
+storage: .verdaccio-store
 uplinks:
   npmjs:
     url: https://registry.npmjs.org/

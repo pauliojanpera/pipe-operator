@@ -9,4 +9,6 @@ export default {
 		},
 	},
 	extensionsToTreatAsEsm: ['.ts'],
+	modulePathIgnorePatterns: ['.*/(.dist|.static|.verdaccio|node_modules)/.*'],
+	testMatch: ['**/__tests__/**/*.[jt]s?(x)'],
 };

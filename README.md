@@ -22,6 +22,8 @@ console.log([1, 2, 3][to](g)); // '1-2-3'
 
 ## Building/Testing
 
+- `pnpm i -g verdaccio` install the Verdaccio package registry proxy
+- `pnpm dev` run Verdaccio
 - `pnpm build` build and publish in Verdaccio locally
 - `pnpm t` run tests
 - `pnpm pub` publish ./dist
