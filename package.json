@@ -26,7 +26,7 @@
 		"dev": "if [ ! -d .verdaccio-store ] ; then if [ ! -d ~/.verdaccio-store ] ; then mkdir ~/.verdaccio-store ; fi ; ln -s ~/.verdaccio-store ; fi && pnpm verdaccio --listen 8798 --config ./verdaccio.yaml",
 		"build": "rm -rf .dist ; pnpm update --depth 0 --filter=${npm_package_name} ; pnpm version patch --no-git-tag-version && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./post-build.mjs && pnpm publish ./.dist --access public --no-git-checks",
 		"test": "NODE_OPTIONS=--experimental-vm-modules pnpm jest",
-		"pub": "pnpm version patch -m 'v%s' && pnpm publish ./.dist --registry http://registry.npmjs.org/ --access public --publish-branch master"
+		"pub": "pnpm version patch -m 'v%s' && pnpm publish ./.dist --registry https://registry.npmjs.org/ --access public --publish-branch master"
 	},
 	"keywords": [
 		"pipe",
