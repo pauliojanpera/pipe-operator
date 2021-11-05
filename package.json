@@ -1,7 +1,7 @@
 {
 	"name": "@pauliojanpera/pipe-operator",
 	"productName": "Pipe operator",
-	"version": "0.0.4",
+	"version": "0.0.7",
 	"description": "A typed pipe operator",
 	"author": {
 		"name": "Pauli Ojanperä",
@@ -24,10 +24,9 @@
 	},
 	"scripts": {
 		"dev": "pnpm verdaccio --listen 8798 --config ./verdaccio.yaml",
-		"build": "shx rm -rf .dist ; tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./post-build.mjs && pnpm publish ./.dist --registry http://localhost:8798/ --access public --no-git-checks",
+		"build": "shx rm -rf .dist ; pnpm version patch --no-git-tag-version && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./post-build.mjs && pnpm publish ./.dist --registry http://localhost:8798/ --access public --no-git-checks",
 		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
-		"pub": "pnpm publish ./.dist --access public --publish-branch master",
-		"pubdryrun": "pnpm publish ./.dist --access public --publish-branch master --dry-run --no-git-checks"
+		"pub": "pnpm version patch -m 'v%s' && pnpm publish ./.dist --access public --publish-branch master"
 	},
 	"keywords": [
 		"pipe",
